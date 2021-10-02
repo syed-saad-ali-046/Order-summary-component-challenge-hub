@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color:#98AFC7;
+ ;
+    }
+    .container{
+      
+      border-radius: 8%;
+      margin-left: 32%;
+      margin-right: 32%;
+      margin-top: 15%;
+      margin-bottom: 20%;
+      background:whitesmoke;
+      
+      
+    }
+    #pic{
+      
+      width: 100%;
+      border-top-left-radius: 8%;
+      border-top-right-radius: 8%;
+    }
+    #head{
+      text-align: center;
+      font-family: 'Scheherazade New', serif;
+      color:rgba(0, 0, 0, 0.753);  
+    }
+    .para{
+      padding-bottom: 10px;
+      padding-left: 6px;
+      padding-right: 6px
+    }
+    #content{
+      text-align: center;
+      font-size: medium;
+      line-height: 1.6;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-family: 'Scheherazade New', serif;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.658);
+    }
+    
+    .box1 {
+      border: 2px solid grey(255, 255, 255, 0.575);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin-right: 15%;
+      margin-left: 15%;
+      box-sizing: border-box; 
+      border-radius: 20px;
+      background-color:rgba(211, 211, 211, 0.863);
+      display: flex;
+      align-items: center;
+    }
+  
+  
+    .conte{
+      margin-left: 20%;
+      line-height: 4pt;
+  
+    }
+    .conte h4{
+      font-weight: 1000;
+      font-size: large;
+      font-family: 'Scheherazade New', serif;
+      color:rgba(0, 0, 0, 0.89);
+    }
+    .conte p{
+      font-weight: 600;
+      font-size: medium;
+      font-family:'Scheherazade New', serif ;
+      color: rgba(0, 0, 0, 0.603);
+    }
+    #img2{
+      padding-left: 10px;
+    }
+    .conte a{
+      padding-left: 140px;
+      padding-bottom: 100px;
+    }
+    #alink{
+      margin-left: 50px;
+      font-family:'Scheherazade New', serif ;
+      font-weight: 800;
+      color: solid rgb(1, 1, 48);
+     
+    }
+    a{
+      color: rgb(4, 4, 88);
+    }
+    a:visited{
+      color:none;
+    }
+    .box2{
+      border: blue;
+      margin-right: 15%;
+      margin-left: 15%;
+      margin-top:10%;
+      padding-top: 2%;
+      text-align: center;
+      padding-bottom: 2%;
+      background: rgba(23, 23, 223, 0.74);
+      box-shadow: rgba(1, 1, 32, 0.993) 0px 5px 15px;
+      border-radius: 10px;
+      font-family: 'Scheherazade New', serif;
+    
+    }
+    #Procced{
+      color: cornsilk;
+      font-weight: 550;
+    }
+    .box3{
+      text-align: center;
+      font-family: 'Scheherazade New', serif ;
+      padding-top: 10%;
+      padding-bottom: 30%;
+      text-shadow:rgba(5, 5, 5, 0.726) 0px 5px 15px;
+    }
+    #change{
+      color:rgba(0, 0, 0, 0.89) ;
+      font-size: large;
+      font-weight: 900;
+    }
+    @media (min-device-width:320px)and (max-device-width: 480px){
+      .container{
+        border-radius: 8%;
+        margin-left: 5px;
+        margin-right: 2%;
+        margin-top: 15%;
+        margin-bottom: 20%;
+        background: whitesmoke;
+      }
+      #alink{
+        margin-left: 1px;
+        font-family: 'Scheherazade New', serif;
+        font-weight: 800;
+        color: solid rgb(1, 1, 48);
+        padding-left: 17px;
+      }
+      .conte{
+        margin-left: 8%;
+        line-height: 4pt;
+      }
+      .box3{
+      text-align: center;
+      font-family: 'Scheherazade New', serif ;
+      padding-top: 10%;
+      padding-bottom: 16%;
+      text-shadow:rgba(5, 5, 5, 0.726) 0px 5px 15px;
+    }
+    }
+    @media(max-device-width:481px)and(min-device-width:768px){
+      #alink{
+        margin-left: 1px;
+        font-family: 'Scheherazade New', serif;
+        font-weight: 800;
+        color: solid rgb(1, 1, 48);
+        padding-left: 16%;
+      }
+      .conte{
+        margin-left: 14%;
+        line-height: 4pt;
+      }
+    }
+      @media(min-device-width:768px)and(max-device-width:1024px){
+        .container{
+          border-radius:42px;
+          margin-left: 17%;
+          margin-right: 24%;
+          margin-top: 15%;
+          margin-bottom: 20%;
+          background: whitesmoke;
+        }
+
+
+      }
+      
+    
+     
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://www.digitshack.com/codepen/mentor1/illustration-hero.svg" alt="Project" id="pic">
+    <div class="sub">
+      <h1 id="head">Order Summary</h1>
+    </div>
+    <div class="para">
+      <p id="content"> You can now listen to millions of songs</br>audiobooks, and podcasts on any 
+        device </br>anywhere you like!
+      </p>
+    </div>
+    <div class="box1">
+      
+      <div id="img2"><img src="https://www.digitshack.com/codepen/mentor1/icon-music.svg" alt=""></div>
+      <div class="conte">
+        <h4> Annual Plan</h4>
+        <p>$59.99/year</p>
+      </div>
+      <div id="alink">
+        <a href="#">Change</a>
+      </div>
+    </div>
+    <div class="box2">
+      <a id="Procced"href="#">Procced To Payment</a>
+    </div>
+    <div class="box3">
+      <a id="change"href="#">Cancel Order</a>  
+    </div>
+    
+   
+          
+    
+    
+  </div>
+</body>
+</html>
